@@ -1160,7 +1160,8 @@ body {
         color: #ff9c00; }
     .about-school-text ul {
       margin-top: 80px;
-      margin-left: 62px; }
+      margin-left: 62px;
+      max-width: 700px; }
       @media (max-width: 1300px) {
         .about-school-text ul {
           margin-top: 40px; } }
@@ -1185,7 +1186,7 @@ body {
           width: 61px;
           height: 68px;
           left: -87px;
-          top: -16px; }
+          top: 1px; }
           @media (max-width: 1620px) {
             .about-school-text ul li:before {
               width: 42px;
