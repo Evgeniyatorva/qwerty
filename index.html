@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <title>Document</title>
 </head>
@@ -45,8 +45,8 @@
                     <li ><a href="#">Статьи</a></li>
                     <li data-menuanchor="main"><a href="#main"><img src="img/logo.png" alt="logo"></a></li>
                     <li><a href="#">Акции</a></li>
-                    <li><a href="#">Цены</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li data-menuanchor="price"><a href="#price">Цены</a></li>
+                    <li data-menuanchor="sale"><a href="#sale">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -56,7 +56,7 @@
             <div class="main-content">
               <h1 class="main-title">Sound City</h1>
               <h2 class="main-subtitle">Музыкальная школа для детей и взрослых в Минске!</h2>
-              <button>Записаться</button>   
+              <button class="btn">Записаться</button>   
             </div>
             <div class="main-triangle-image">
               <img src="img/main-triangle.png" alt="tr">
@@ -125,6 +125,116 @@
                   necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
                   Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
                   necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-black">
+      <div class="container">
+        <div class="row">
+          <div class="section-prices">
+            <div class="section-title">
+              <h2>Цены</h2>
+            </div>
+            <div class="prices-content">            
+              <div class="prices-content-image">
+                <img src="img/price-img.png" alt="price">
+              </div>
+              <div class="prices-content-wrap">
+                <div class="prices-content-text">
+                  <p class="prices-content-text-number"><span>8</span> парных занятий</p>
+                  <p class="prices-content-text-value">90 руб.</p>
+                </div>
+                <div class="prices-content-text">
+                  <p class="prices-content-text-number"><span>8</span> индивидуальных занятий</p>
+                  <p class="prices-content-text-value">150 руб.</p>
+                </div>
+                <div class="prices-subtitle">
+                  <p>Первое занятие бесплатно</p>
+                </div>  
+              </div>                          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-prices">
+            <div class="section-title">
+              <h2>Акции</h2>
+            </div>
+            <div class="sale-content">            
+              <div class="sale-content-image">
+                <img src="img/sale-img.png" alt="sale">
+              </div>
+              <div class="sale-content-items">
+                 <div class="sale-item sale-item-rotate">
+                   <p>Приведи друга и получи скидку на месяц обучения!</p>
+                   <span>50%</span>
+                 </div>
+                 <div class="sale-item sale-item-rotate">
+                  <p>Запишись на две дисциплины и получи скидку</p>
+                  <span>20%</span>
+                </div>
+                <div class="sale-item sale-item-rotate">
+                  <p>Проучись у нас больще 3-х месяцев и получи скидку</p>
+                  <span>10%</span>
+                </div>
+              </div>                          
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-black">
+      <div class="container">
+        <div class="row">
+          <div class="section-prices">
+            <div class="section-title">
+              <h2>О нас</h2>
+            </div>
+            <div class="about-teacher">            
+              <div class="about-item">
+                <img src="img/teacher.jpg" alt="teacher">
+                <p class="about-name">Александр Винокуров</p>
+                <p class="about-learn">Гитара</p>
+              </div>
+              <div class="about-item">
+                <img src="img/teacher.jpg" alt="teacher">
+                <p class="about-name">Александр Винокуров</p>
+                <p class="about-learn">Вокал</p>
+              </div>
+              <div class="about-item">
+                <img src="img/teacher.jpg" alt="teacher">
+                <p class="about-name">Александр Винокуров</p>
+                <p class="about-learn">Барабаны</p>
+              </div>                    
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-prices">
+            <div class="about-school">            
+               <div class="about-school-image">
+                 <img src="img/about-img.png" alt="about">
+               </div>   
+               <div class="about-school-text">
+                 <p>Музыкальная школа <span>Sound City</span> открыта для всех желающих научиться петь, а также, играть на гитаре и ударных инструментах. 
+                  Мы - команда профессиональных музыкантов с многолетним опытом работы, предлагаем:</p>
+                  <ul>
+                    <li>Обучение музыки для начинающих, продвинутых и профессионалов!</li>
+                    <li>Место обучения, оснащенное всем необходимым оборудованием, в самом центре Минска!</li>
+                    <li>Настоящую музыкальную атмосферу и теплый прием!</li>
+                  </ul>
+                  <button class="btn btn-about">Записаться</button>
+               </div>               
             </div>
           </div>
         </div>

@@ -1,13 +1,17 @@
 // fullpage scroll
-$('#fullpage').fullpage({
-  licenseKey: '1234-2343',
-  lazyLoading: true,
-  autoScrolling:true,
-  scrollHorizontally: true,
-  scrollingSpeed: 1000,
-  anchors: ['main', 'training', 'about-us'],
-	menu: '#myMenu'
-});
+
+if (window.innerWidth > 1200) {
+  $('#fullpage').fullpage({
+    licenseKey: '1234-2343',
+    lazyLoading: true,
+    autoScrolling:true,
+    scrollHorizontally: true,
+    scrollingSpeed: 1000,
+    anchors: ['main', 'training', 'about-us', 'price', 'sale'],
+    menu: '#myMenu'
+  });
+
+}
 
 //video bg
 
