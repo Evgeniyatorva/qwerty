@@ -15,7 +15,7 @@
       <div class="container-fluid">
         <div class="row">
           <div class="video-background">
-            <video class="my-background-video jquery-background-video" loop data-autoplay muted playsinline >
+            <video class="my-background-video" loop data-autoplay muted playsinline >
               <source data-src="video/qwe.mp4" type="video/mp4">
             </video>
           </div>          
@@ -31,7 +31,7 @@
                 <a class="address" href="#">ул. Красноармейская, 4</a>                               
               </div>              
               <div class="header-contact-phone">
-                <a class="phone" href="#">+375 29 999 99 99</a>
+                <a class="phone" href="#">+375 29 505 66 66</a>
                 <a class="phone" href="#">+375 29 999 99 99</a> 
               </div>
             </div>
@@ -41,12 +41,12 @@
                 <nav>
                   <ul>
                     <li data-menuanchor="training"><a href="#training">Обучение</a></li>
+                    <li data-menuanchor="price"><a href="#price">Цены</a></li>
+                    <li data-menuanchor="sale"><a href="#sale">Акции</a></li>
+                    <li data-menuanchor="main"><a href="#main"><img src="img/logo.png" alt="logo"></a></li>
                     <li data-menuanchor="about-us"><a href="#about-us">О нас</a></li>
                     <li ><a href="#">Статьи</a></li>
-                    <li data-menuanchor="main"><a href="#main"><img src="img/logo.png" alt="logo"></a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li data-menuanchor="price"><a href="#price">Цены</a></li>
-                    <li data-menuanchor="sale"><a href="#sale">Контакты</a></li>
+                    <li><a href="#">Контакты</a></li>
                   </ul>
                 </nav>
               </div>
@@ -71,70 +71,106 @@
     <section class="section bg-color-gray">
       <div class="container">
         <div class="row">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="img/voice.png" alt="voice">
-            </div>
-            <div class="service-content">
-              <h2 class="service-content-title">Вокал</h2>              
-              <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-            </div>
+          <div class="section-title">
+            <img src="img/select.png" alt="Выберите направление">
+            <h2>Выберите направление</h2>
           </div>
+          <div class="service-items">
+            <div class="service-items-link">
+              <a href="#" data-name="voice" class="item voice">
+                <div class="bg"></div>
+                <img src="img/вокал.png" alt="Вокал">
+              </a>
+              <a href="#" data-name="drums" class="item drums">
+                <div class="bg"></div>
+                <img src="img/ударные.png" alt="Барабаны">
+              </a>
+              <a href="#" data-name="guitar" class="item guitar">
+                <div class="bg"></div>
+                <img src="img/гитара.png" alt="Гитара">
+              </a>
+            </div>
+            <div class="service-items-content">
+                <div class="service-display voice">
+                  <div class="row">
+                    <div class="service-item">
+                      <div class="service-image">
+                        <img src="img/voice.png" alt="voice">
+                      </div>
+                      <div class="service-content">
+                        <div class="service-content-title-img">
+                          <img src="img/вокал.png" alt="вокал">
+                          <h2 class="service-content-title">Вокал</h2>  
+                        </div>                          
+                        <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                      </div>
+                      <a href="#" class="popup-close">X</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-display drums">
+                  <div class="row">
+                    <div class="service-item">
+                      <div class="service-image">
+                        <img src="img/drums.png" alt="drums">
+                      </div>
+                      <div class="service-content service-order">
+                        <div class="service-content-title-img">
+                          <img src="img/ударные.png" alt="ударные">
+                          <h2 class="service-content-title">Ударные</h2>  
+                        </div>             
+                        <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. ovident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                      <a href="#" class="popup-close">X</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="service-display guitar">
+                  <div class="row">
+                    <div class="service-item">
+                      <div class="service-image">
+                        <img src="img/guitar.png" alt="guitar">
+                      </div>
+                      <div class="service-content">
+                        <div class="service-content-title-img">
+                          <img src="img/гитара.png" alt="гитара">
+                          <h2 class="service-content-title">Гитара</h2>  
+                        </div>             
+                        <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. ovident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
+                            Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
+                            necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                      </div>
+                      <a href="#" class="popup-close">X</a>
+                    </div>
+                  </div>
+                </div>
+            </div>            
+          </div>          
         </div>
       </div>
     </section>
-    <section class="section bg-color-black">
-      <div class="container">
-        <div class="row">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="img/tadadums.png" alt="tadadums">
-            </div>
-            <div class="service-content service-order">
-              <h2 class="service-content-title">Ударные</h2>              
-              <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. ovident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section bg-color-gray">
-      <div class="container">
-        <div class="row">
-          <div class="service-item">
-            <div class="service-image">
-              <img src="img/guitar.png" alt="guitar">
-            </div>
-            <div class="service-content">
-              <h2 class="service-content-title">Гитара</h2>              
-              <p class="service-content-text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                  Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. ovident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
-                  Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
-                  necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    
     <section class="section bg-color-black">
       <div class="container">
         <div class="row">
           <div class="section-prices">
             <div class="section-title">
+              <img src="img/цены.png" alt="цены">
               <h2>Цены</h2>
             </div>
             <div class="prices-content">            
@@ -164,6 +200,7 @@
         <div class="row">
           <div class="section-prices">
             <div class="section-title">
+              <img src="img/акции.png" alt="акции">
               <h2>Акции</h2>
             </div>
             <div class="sale-content">            
@@ -173,14 +210,23 @@
               <div class="sale-content-items">
                  <div class="sale-item sale-item-rotate">
                    <p>Приведи друга и получи скидку на месяц обучения!</p>
+                   <div class="sale-img">
+                     <img src="img/50.png" alt="50%">
+                   </div>                   
                    <span>50%</span>
                  </div>
                  <div class="sale-item sale-item-rotate">
                   <p>Запишись на две дисциплины и получи скидку</p>
+                  <div class="sale-img">
+                    <img src="img/20.png" alt="20%">
+                  </div>
                   <span>20%</span>
                 </div>
                 <div class="sale-item sale-item-rotate">
                   <p>Проучись у нас больще 3-х месяцев и получи скидку</p>
+                  <div class="sale-img">
+                    <img src="img/10.png" alt="10%">
+                  </div>
                   <span>10%</span>
                 </div>
               </div>                          
@@ -194,6 +240,7 @@
         <div class="row">
           <div class="section-prices">
             <div class="section-title">
+              <img src="img/о-нас.png" alt="о-нас">
               <h2>О нас</h2>
             </div>
             <div class="about-teacher">            
@@ -243,7 +290,7 @@
   </div>
   <script src="js/jquery.min.js"></script>
   <script src="js/fullpage.extensions.min.js"></script>
-  <script src="js/jquery.background-video.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
   
   <script src="js/main.js"></script>
 </body>
