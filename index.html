@@ -6,8 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/fullpage.css">
   <link rel="stylesheet" href="css/main.css">
-  <title>Document</title>
+  <title>Музыкальная школа в Минске</title>
 </head>
 <body>
   <div class="wrapper" id="fullpage">
@@ -16,7 +17,7 @@
         <div class="row">
           <div class="video-background">
             <video class="my-background-video" loop data-autoplay muted playsinline >
-              <source data-src="video/qwer.mp4" type="video/mp4">
+              <source data-src="video/qwe.mp4" type="video/mp4">
             </video>
           </div>          
           <header class="header" id="myMenu">
@@ -31,7 +32,7 @@
                 <a class="address" href="#">ул. Красноармейская, 4</a>                               
               </div>              
               <div class="header-contact-phone">
-                <a class="phone" href="#">+375 29 505 66 66</a>
+                <a class="phone" href="#">+375 29 999 99 99</a>
                 <a class="phone" href="#">+375 29 999 99 99</a> 
               </div>
             </div>
@@ -71,10 +72,6 @@
     <section class="section bg-color-gray">
       <div class="container">
         <div class="row">
-          <div class="section-title">
-            <img src="img/select.png" alt="Выберите направление">
-            <h2>Выберите направление</h2>
-          </div>
           <div class="service-items">
             <div class="service-items-link">
               <a href="#" data-name="voice" class="item voice">
@@ -106,8 +103,11 @@
                             Vitae dicta quibusdam, enim recusandae quod provident exercitationem quasi. 
                             Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
                             necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="service-content-navigation">
+                          <button class="btn popup-close">Назад</button>
+                          <button class="btn">Записаться</button>
+                        </div>                        
                       </div>
-                      <a href="#" class="popup-close">X</a>
                     </div>
                   </div>
                 </div>
@@ -130,8 +130,11 @@
                             necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
                             Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
                             necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                      </div>
-                      <a href="#" class="popup-close">X</a>
+                        <div class="service-content-navigation">
+                          <button class="btn popup-close">Назад</button>
+                          <button class="btn">Записаться</button>
+                        </div> 
+                      </div>                      
                     </div>
                   </div>
                 </div>
@@ -154,8 +157,11 @@
                             necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.ovident exercitationem quasi. 
                             Accusamus sequi provident quo ut tenetur aspernatur maiores minus optio, officia facilis 
                             necessitatibus! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="service-content-navigation">
+                          <button class="btn popup-close">Назад</button>
+                          <button class="btn">Записаться</button>
+                        </div> 
                       </div>
-                      <a href="#" class="popup-close">X</a>
                     </div>
                   </div>
                 </div>
@@ -168,7 +174,7 @@
     <section class="section bg-color-black">
       <div class="container">
         <div class="row">
-          <div class="section-prices">
+          <div class="section-wrapper">
             <div class="section-title">
               <img src="img/цены.png" alt="цены">
               <h2>Цены</h2>
@@ -179,17 +185,23 @@
               </div>
               <div class="prices-content-wrap">
                 <div class="prices-content-text">
-                  <p class="prices-content-text-number"><span>8</span> парных занятий</p>
+                  <p class="prices-content-text-count">
+                    <span class="price-content-text-count-image"></span>
+                    <span class="span-hidden">8</span> парных занятий
+                  </p>                    
                   <p class="prices-content-text-value">90 руб.</p>
                 </div>
                 <div class="prices-content-text">
-                  <p class="prices-content-text-number"><span>8</span> индивидуальных занятий</p>
+                  <p class="prices-content-text-count">
+                    <span class="price-content-text-count-image"></span>
+                    <span class="span-hidden">8</span> индивидуальных занятий
+                  </p>                    
                   <p class="prices-content-text-value">150 руб.</p>
-                </div>
-                <div class="prices-subtitle">
-                  <p>Первое занятие бесплатно</p>
                 </div>  
-              </div>                          
+              </div>  
+              <div class="prices-subtitle">
+                <p>Первое занятие бесплатно</p>
+              </div>                        
             </div>
           </div>
         </div>
@@ -198,7 +210,7 @@
     <section class="section bg-color-gray">
       <div class="container">
         <div class="row">
-          <div class="section-prices">
+          <div class="section-wrapper">
             <div class="section-title">
               <img src="img/акции.png" alt="акции">
               <h2>Акции</h2>
@@ -238,7 +250,7 @@
     <section class="section bg-color-black">
       <div class="container">
         <div class="row">
-          <div class="section-prices">
+          <div class="section-wrapper">
             <div class="section-title">
               <img src="img/о-нас.png" alt="о-нас">
               <h2>О нас</h2>
@@ -267,7 +279,7 @@
     <section class="section bg-color-gray">
       <div class="container">
         <div class="row">
-          <div class="section-prices">
+          <div class="section-wrapper">
             <div class="about-school">            
                <div class="about-school-image">
                  <img src="img/about-img.png" alt="about">
@@ -280,8 +292,117 @@
                     <li>Место обучения, оснащенное всем необходимым оборудованием, в самом центре Минска!</li>
                     <li>Настоящую музыкальную атмосферу и теплый прием!</li>
                   </ul>
-                  <button class="btn btn-about">Записаться</button>
+                  <div class="btn-center">
+                    <button class="btn">Записаться</button>
+                  </div>                  
                </div>               
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-wrapper">
+            <div class="portfolio-video">
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+              <div class="video-item">
+                <img src="img/video-bg.jpg" alt="video">
+              </div>
+            </div>
+            <div class="portfolio-social">
+              <p class="portfolio-social-text">Больше фото и видео в наших социальных сетях!</p>
+              <div class="social-icons">
+                <a href="#" class="social inst"></a>
+                <a href="#" class="social vk"></a>
+                <a href="#" class="social fb"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section bg-color-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-wrapper">
+            <div class="section-title">
+              <img src="img/контакты.png" alt="контакты">
+              <h2>Контакты</h2>
+            </div>
+            <div class="contact">            
+              <div class="contact-left">
+                <div class="contact-text">
+                  <a href="#">г. Минск, ул. Блаблабла 14, офис 88</a>
+                  <a href="#">+375 (29) 481-51-23</a>
+                  <a href="#">e-mail: soundsity@gmail.com</a>
+                </div>
+                <div class="social">
+                  <div class="social-icons social-icons-contact">
+                    <a href="#" class="social inst"></a>
+                    <a href="#" class="social vk"></a>
+                    <a href="#" class="social fb"></a>
+                  </div>
+                </div>
+                <div class="contact-image">
+                  <img src="img/contact-guitar.png" alt="contact-guitar">
+                </div>
+              </div>
+              <div class="contact-right">
+                <div class="map">
+                    <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d904.3195909184799!2d-3.7582206057868444!3d40.32556338655075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd418a1c0fcfdc7b%3A0x61c2b4174a8f7dc1!2zQ2FsbGUgQWMvRGMsIDI4OTE0IExlZ2Fuw6lzLCBNYWRyaWQsINCY0YHQv9Cw0L3QuNGP!5e0!3m2!1sru!2sby!4v1570175309270!5m2!1sru!2sby" style="border:0;" allowfullscreen=""></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bg-color-gray">
+      <div class="container">
+        <div class="row">
+          <div class="section-wrapper">
+            <div class="free-learn">
+              <div class="free-learn-image">
+                <img src="img/form-image.png" alt="free-learn">
+              </div>
+              <div class="free-learn-form">
+                <form action="#" class="form">
+                  <div class="section-title form-title">
+                    <img src="img/free-learn.png" alt="free learn">
+                    <h2>Записаться на бесплатное занятие</h2>
+                  </div>
+                  <div class="input-wrapper">
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="text" placeholder="Ваш номер телефона">
+                    <select name="subject">
+                      <option value="" disabled selected>Желаемая дисциплина</option>
+                      <option value="Вокал">Вокал</option>
+                      <option value="Ударные">Ударные</option>
+                      <option value="Гитара">Гитара</option>
+                    </select>
+                    <div class="btn-center btn-form">
+                      <button class="btn" type="submit">Записаться</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
         </div>

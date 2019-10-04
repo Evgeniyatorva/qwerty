@@ -42,7 +42,7 @@ $(".service-items-link .item").click(function(e) {
   $(".service-items-content .service-display").each(function(index, elem) {
     var contextContent = $(elem);
 
-    items.map(function (item) {
+    items.map(function(item) {
       if (contextLink.attr('data-name') === item && contextContent.hasClass(item) ) {
         contextContent.show("slow");
       }
@@ -53,7 +53,7 @@ $(".popup-close").click(function(e) {
   e.preventDefault();
   $(".service-items-content .service-display").each(function(index, elem) {
     var contextContent = $(elem);
-    items.map(function (item) {
+    items.map(function(item) {
       if (contextContent.hasClass(item) ) {
         contextContent.hide("slow");
       }
