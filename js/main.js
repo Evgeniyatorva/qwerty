@@ -11,17 +11,9 @@ $('#fullpage').fullpage({
   responsiveWidth: 1200
 });
 
-if (window.innerWidth < 1200) {
-  var myVideo = document.querySelector( ".my-background-video" );
-  console.log(myVideo);
-
-  myVideo.autoplay = true;
-  $('.my-background-video').remove('data-autoplay');
-}
 
 //video bg
 $('#arrow').click(function() {
-  console.log('qwe')
   fullpage_api.moveSectionDown();
 })
 
