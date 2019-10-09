@@ -1,12 +1,11 @@
 // fullpage scroll
-
 $('#fullpage').fullpage({
   licenseKey: '1234-2343',
   lazyLoading: true,
   autoScrolling:true,
   scrollHorizontally: true,
   scrollingSpeed: 1000,
-  anchors: ['main', 'training', 'price', 'sale', 'about-us' ],
+  anchors: ['main', 'training', 'price', 'sale', 'about-us', 'about-us-2', 'portfolio', 'contact', 'form'  ],
   menu: '#myMenu',
   responsiveWidth: 1200
 });
@@ -22,7 +21,6 @@ $('#arrow').click(function() {
 $(".menu").click(function() {
   $(this).toggleClass("menu-expanded");
 });
-
 
 
 // popup items service
@@ -41,6 +39,7 @@ $(".service-items-link .item").click(function(e) {
     })
   })
 })
+
 $(".popup-close").click(function(e) {
   e.preventDefault();
   $(".service-items-content .service-display").each(function(index, elem) {
