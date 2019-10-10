@@ -5,13 +5,14 @@ $('#fullpage').fullpage({
   autoScrolling:true,
   scrollHorizontally: true,
   scrollingSpeed: 1000,
-  anchors: ['main', 'training', 'price', 'sale', 'about-us', 'about-us-2', 'portfolio', 'contact', 'form'  ],
+  anchors: ['main', 'training', 'price', 'sale', 'about-us', 'about-us-2', 'portfolio', 'contact', 'form', 'footer'],
   menu: '#myMenu',
-  responsiveWidth: 1200
+  responsiveWidth: 1200,
+  easingcss3: 'ease'
 });
 
 
-//video bg
+//arrow on main
 $('#arrow').click(function() {
   fullpage_api.moveSectionDown();
 })
@@ -25,9 +26,11 @@ $(".menu").click(function() {
 
 // popup items service
 var items = ['voice', 'drums', 'guitar'];
+var serviceBG = $(".service-items-content");
 $(".service-items-link .item").click(function(e) {
   e.preventDefault();
   var contextLink = $(this);  
+  serviceBG.toggleClass("service-items-content-index");
 
   $(".service-items-content .service-display").each(function(index, elem) {
     var contextContent = $(elem);
@@ -39,15 +42,17 @@ $(".service-items-link .item").click(function(e) {
     })
   })
 })
-
 $(".popup-close").click(function(e) {
-  e.preventDefault();
+
   $(".service-items-content .service-display").each(function(index, elem) {
     var contextContent = $(elem);
     items.map(function(item) {
       if (contextContent.hasClass(item) ) {
-        contextContent.hide("slow");
-      }
+        contextContent.hide("slow"); 
+      }    
     })
   })
+  setTimeout(function() {
+    serviceBG.toggleClass("service-items-content-index");
+  }, 500)
 })
