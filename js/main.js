@@ -29,6 +29,7 @@ var items = ['voice', 'drums', 'guitar'];
 var serviceBG = $(".service-items-content");
 $(".service-items-link .item").click(function(e) {
   e.preventDefault();
+  
   var contextLink = $(this);  
   serviceBG.toggleClass("service-items-content-index");
 

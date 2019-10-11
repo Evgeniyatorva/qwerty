@@ -1038,7 +1038,7 @@ body {
           -ms-flex-pack: start;
               justify-content: flex-start;
       padding-left: 13px;
-      margin-bottom: 36px; }
+      margin-bottom: 63px; }
       @media (max-width: 480px) {
         .service-item .service-content-navigation {
           -webkit-box-orient: vertical;
@@ -1154,10 +1154,10 @@ body {
   .service-items-content .service-display {
     position: absolute;
     background-color: #222;
-    bottom: 1%;
-    top: 1%;
-    left: 1%;
-    right: 1%;
+    bottom: 0%;
+    top: 0%;
+    left: 0%;
+    right: 0%;
     z-index: 100;
     display: none; }
     @media (max-width: 1560px) {
