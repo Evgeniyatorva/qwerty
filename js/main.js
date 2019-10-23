@@ -25,15 +25,15 @@ $(".menu").click(function() {
 
 
 // popup items service
-var items = ['voice', 'drums', 'guitar'];
-var serviceBG = $(".service-items-content");
-$(".service-items-link .item").click(function(e) {
+var items = ['voice', 'drums', 'guitar', 'teacher-voice', 'teacher-guitar', 'teacher-drums'];
+var serviceBG = $(".popup-items-content");
+$(".popup-items .item").click(function(e) {
   e.preventDefault();
   
   var contextLink = $(this);  
-  serviceBG.toggleClass("service-items-content-index");
+  serviceBG.toggleClass("popup-items-content-index");
 
-  $(".service-items-content .service-display").each(function(index, elem) {
+  $(".popup-items-content .popup-display").each(function(index, elem) {
     var contextContent = $(elem);
 
     items.map(function(item) {
@@ -45,7 +45,7 @@ $(".service-items-link .item").click(function(e) {
 })
 $(".popup-close").click(function(e) {
 
-  $(".service-items-content .service-display").each(function(index, elem) {
+  $(".popup-items-content .popup-display").each(function(index, elem) {
     var contextContent = $(elem);
     items.map(function(item) {
       if (contextContent.hasClass(item) ) {
@@ -54,6 +54,6 @@ $(".popup-close").click(function(e) {
     })
   })
   setTimeout(function() {
-    serviceBG.toggleClass("service-items-content-index");
+    serviceBG.toggleClass("popup-items-content-index");
   }, 500)
 })
