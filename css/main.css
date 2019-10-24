@@ -560,7 +560,9 @@ body {
   text-decoration: none;
   margin-right: 10px; }
   .social:nth-child(1) {
-    margin-right: 14px; }
+    margin-right: 10px; }
+  .social:nth-child(4) {
+    margin-left: -2px; }
 
 .inst {
   background-image: url(../img/inst.svg);
@@ -570,9 +572,9 @@ body {
 
 .vk {
   background-image: url(../img/vk.svg);
-  background-size: 29px;
-  width: 29px;
-  height: 29px;
+  background-size: 28px;
+  width: 28px;
+  height: 28px;
   margin-top: -5px; }
 
 .fb {
@@ -580,6 +582,13 @@ body {
   background-size: 19px;
   width: 19px;
   height: 19px; }
+
+.youtube {
+  background-image: url(../img/youtube.png);
+  background-size: 25px;
+  width: 25px;
+  height: 19px;
+  background-repeat: no-repeat; }
 
 .header {
   width: 100%;
@@ -650,6 +659,9 @@ body {
         margin-left: 50px;
         color: #fff;
         text-decoration: none; }
+        @media (max-width: 1280px) {
+          .header-contact-wrap .address {
+            margin-left: 25px; } }
     @media (max-width: 1200px) {
       .header-contact-phone {
         margin-top: 13px;
@@ -1015,6 +1027,7 @@ body {
       .service-item .service-content-title-teacher {
         display: block;
         font-family: 'Roboto', sans-serif;
+        font-weight: 400;
         margin-left: -10px;
         font-size: 85px;
         margin-bottom: 20px; }
@@ -2017,7 +2030,7 @@ body {
   .form input, .form select {
     width: 100%;
     display: block;
-    margin-bottom: 30px;
+    margin-top: 30px;
     border: 2px solid #fff;
     background-color: transparent;
     padding-left: 15px;
@@ -2231,3 +2244,14 @@ body {
             font-weight: 400;
             color: #fff;
             text-decoration: none; }
+
+.form-name-error, .form-phone-error {
+  color: red;
+  font-size: 24px; }
+
+#submit-ajax {
+  color: #fff;
+  font-size: 38px;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto; }
