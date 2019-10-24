@@ -130,23 +130,26 @@
                 <img src="img/form-image.png" alt="free-learn">
               </div>
               <div class="free-learn-form">
-                <form action="#" class="form">
+                <form action="post" class="form ">
                   <div class="section-title form-title">
                     <div class="form-title-image"></div>
                     <h2>Записаться на бесплатное занятие</h2>
                   </div>
                   <div class="input-wrapper">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="text" placeholder="Ваш номер телефона">
-                    <select name="subject">
+                    <input type="text" placeholder="Ваше имя" name="name" class="form-name">
+                    <span class="form-name-error"></span>
+                    <input type="text" placeholder="Ваш номер телефона" name="phone" class="form-phone">
+                    <span class="form-phone-error"></span>
+                    <select name="subject" class="form-subject">
                       <option value="" disabled selected>Желаемая дисциплина</option>
                       <option value="Вокал">Вокал</option>
                       <option value="Ударные">Ударные</option>
                       <option value="Гитара">Гитара</option>
                     </select>
                     <div class="btn-center btn-form">
-                      <button class="btn" type="submit">Записаться</button>
+                      <button class="btn submit-button" type="submit">Записаться</button>
                     </div>
+                    <div id="submit-ajax"></div>
                   </div>
                 </form>
               </div>
@@ -188,5 +191,43 @@
   <script src="js/jquery.fancybox.min.js"></script>
   
   <script src="js/main.js"></script>
+
+  <script>
+    $(".submit-button").on("click", function (event) {
+      event.preventDefault();
+      var name = $(".form-name").val();
+      var phone = $(".form-phone").val();
+      var subject = $(".form-subject").val();
+      
+      if (name === '') {
+          $(".form-name-error").html('введите имя');
+          return false
+      }else {
+          $(".form-name-error").html('');
+      }
+      if (phone === '') {
+          $(".form-phone-error").html('введите номер телефона');
+          return false
+      }else {
+          $(".form-phone-error").html('');
+      }
+      
+      if (name !== '' && phone !== ''){
+          $.ajax({
+            url: "/mail.php",
+            method: 'post',
+            data: {
+                action: 'ajax_order',
+                name: name,
+                phone: phone,
+                subject: subject,
+            },
+            success: function (response) {
+                $('#submit-ajax').html(response);
+            }
+        });
+      }      
+    });
+  </script>
 </body>
 </html>
