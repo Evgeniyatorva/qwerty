@@ -1258,6 +1258,9 @@ body {
   text-align: center;
   margin-top: 5%;
   margin-bottom: 35px; }
+  .section-title-margin {
+    margin-top: 0;
+    margin-bottom: 0; }
   @media (max-width: 1620px) {
     .section-title {
       margin-top: 6%; } }
@@ -1269,18 +1272,20 @@ body {
     @media (max-width: 1280px) {
       .section-title img {
         height: 50px; } }
-  .section-title h2 {
-    font-family: 'downcomeregular', sans-serif;
-    font-size: 70px;
+  .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
     color: #fff;
     text-align: center;
-    display: none;
-    width: 100%; }
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    visibility: hidden; }
     @media (max-width: 1560px) {
-      .section-title h2 {
+      .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
         font-size: 55px; } }
     @media (max-width: 1200px) {
-      .section-title h2 {
+      .section-title h1, .section-title h2, .section-title h3, .section-title h4, .section-title h5, .section-title h6 {
         margin-top: 100px; } }
 
 .section-wrapper {
